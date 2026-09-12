@@ -28,9 +28,9 @@ services:
   container_name: db_postgres
   restart: always
   environment:
-   - POSTGRES_PASSWORD=PASSWORD
-   - POSTGRES_USER=YAIR
-   - POSTGRES_DB=SEMANA2
+   - POSTGRES_PASSWORD=$(PASSWORD)
+   - POSTGRES_USER=$(USER)
+   - POSTGRES_DB=$(DB)
   ports:
    - "5432:5432"
   volumes:
